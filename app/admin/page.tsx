@@ -61,8 +61,10 @@ export default function AdminPage() {
   );
 }
 
+type Participant = { _id: string; name: string; email: string; phone: string; createdAt: string };
+
 function ParticipantsList() {
-  const [items, setItems] = useState<any[]>([]);
+  const [items, setItems] = useState<Participant[]>([]);
   useEffect(() => {
     fetch("/api/participants").then(r => r.json()).then(setItems).catch(() => {});
   }, []);

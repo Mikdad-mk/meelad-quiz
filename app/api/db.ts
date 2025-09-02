@@ -6,9 +6,15 @@ if (!MONGODB_URI) {
   console.warn("MONGODB_URI is not set. API routes depending on DB will fail.");
 }
 
-let cached = (global as any).mongoose as { conn: typeof mongoose | null; promise: Promise<typeof mongoose> | null } | undefined;
+type MongooseCache = { conn: typeof mongoose | null; promise: Promise<typeof mongoose> | null };
+type GlobalWithMongoose = typeof global & { mongoose?: MongooseCache };
+
+const g = global as unknown as GlobalWithMongoose;
+
+let cached: MongooseCache | undefined = g.mongoose;
 if (!cached) {
-  cached = (global as any).mongoose = { conn: null, promise: null };
+  cached = { conn: null, promise: null };
+  g.mongoose = cached;
 }
 
 export async function connectToDatabase(): Promise<typeof mongoose> {
