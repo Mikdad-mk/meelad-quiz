@@ -305,7 +305,7 @@ export default function Home() {
             {current.title}
           </h1>
           {current.subtitle && (
-            <p className="mt-4 text-xs uppercase text-neutral-400">{current.subtitle}</p>
+            <p className="mt-4 text-xs uppercase text-neutral-600">{current.subtitle}</p>
           )}
 
           <div className="mt-3 space-y-3">
