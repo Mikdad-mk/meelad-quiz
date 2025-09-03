@@ -159,7 +159,7 @@ export default function Home() {
               </div>
 
               <h1 className="mt-2 text-xl font-semibold text-neutral-900 leading-snug">Welcome</h1>
-              <p className="text-sm text-neutral-600 mt-1">Please share your details to begin the quiz.</p>
+              <p className="text-sm text-neutral-600 mt-1">Please share your details to begin the Meelad quiz.</p>
 
               <div className="mt-6 space-y-4">
                 <div>
