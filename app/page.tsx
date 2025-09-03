@@ -97,23 +97,56 @@ export default function Home() {
       <div
         className="relative min-h-screen w-full overflow-hidden bg-[radial-gradient(1200px_700px_at_50%_100%,#ffffff_0%,#f6fff9_45%,#eafbf3_85%)] flex items-center justify-center p-4 sm:p-6"
       >
-        {/* Mobile full image */}
+        {/* Mobile: full-bleed image centered behind card */}
         <div className="absolute inset-0 md:hidden">
           <Image src="/mosque-final.png" alt="Background scene" fill priority className="object-cover object-center opacity-100 select-none pointer-events-none" />
         </div>
-        {/* Desktop left image */}
-        <div className="hidden md:block absolute inset-y-0 left-0 w-full md:w-[65%] lg:w-[55%] xl:w-[50%]">
+        {/* Desktop: image fixed to left side with soft fade */}
+        <div
+          className="hidden md:block absolute inset-y-0 left-0 w-full md:w-[65%] lg:w-[55%] xl:w-[50%]"
+          style={{
+            WebkitMaskImage:
+              "linear-gradient(to right, black 70%, rgba(0,0,0,0) 100%)",
+            maskImage: "linear-gradient(to right, black 70%, rgba(0,0,0,0) 100%)",
+          }}
+        >
           <Image src="/mosque-final.png" alt="Background scene" fill priority className="object-cover object-left-top opacity-100 select-none pointer-events-none" />
         </div>
+        {/* Vignette + gradient overlays to match quiz screen */}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-emerald-900/40 via-emerald-900/20 to-transparent" />
+        {/* Mobile readability overlay */}
         <div className="pointer-events-none absolute inset-0 md:hidden bg-gradient-to-b from-emerald-900/20 via-transparent to-transparent" />
-        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,rgba(16,185,129,0.18)_0%,rgba(255,255,255,0)_80%)] mix-blend-overlay" />
+        {/* Emerald tint from left to right */}
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-emerald-600/30 via-transparent to-transparent mix-blend-multiply" />
+        {/* Subtle grid texture */}
+        <div className="pointer-events-none absolute inset-0 opacity-15 [background:radial-gradient(rgba(16,185,129,0.15)_1px,transparent_1px)] [background-size:18px_18px] mix-blend-overlay" />
+        {/* Radial highlight */}
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(60% 40% at 50% 10%, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.0) 60%)",
+          }}
+        />
+        {/* Decorative blobs */}
+        <div className="pointer-events-none absolute -top-40 -left-40 h-[420px] w-[420px] rounded-full bg-gradient-to-br from-emerald-400/40 to-teal-500/30 blur-3xl animate-pulse" />
+        <div className="pointer-events-none absolute top-24 right-0 h-[360px] w-[360px] rounded-full bg-gradient-to-br from-lime-300/30 to-emerald-400/20 blur-3xl animate-[pulse_7s_ease-in-out_infinite]" />
+        {/* Layered curved panels at bottom */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute bottom-0 left-0 right-0"
+          style={{
+            height: "vh",
+            clipPath: "ellipse(130% 58% at 50% 0%)",
+          }}
+        />
         <div
           aria-hidden
           className="pointer-events-none absolute bottom-0 left-0 right-0"
           style={{
             height: "48vh",
-            clipPath: "ellipse(130% 58% at 50% 0%)",
+            clipPath: "ellipse(140% 52% at 50% 3%)",
+            boxShadow: "0 -8px 30px rgba(16,185,129,0.08) inset",
           }}
         />
 
