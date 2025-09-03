@@ -48,6 +48,196 @@ export default function Home() {
           { id: "high", label: "$5,000+" },
         ],
       },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
+      {
+        id: "q3",
+        title: "What is your budget range?",
+        subtitle: "Select only one",
+        options: [
+          { id: "low", label: "Under $1,000" },
+          { id: "med", label: "$1,000 – $5,000" },
+          { id: "high", label: "$5,000+" },
+        ],
+      },
     ],
     []
   );
