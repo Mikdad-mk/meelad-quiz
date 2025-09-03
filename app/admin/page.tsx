@@ -82,6 +82,12 @@ export default function AdminPage() {
               <h1 className="text-xl sm:text-2xl font-semibold text-neutral-900">Admin Dashboard</h1>
               <p className="text-xs sm:text-sm text-neutral-700">Manage questions and view participants</p>
             </div>
+            <button
+              onClick={async ()=>{ await fetch('/api/admin/logout',{ method:'POST'}); window.location.href = '/admin/login'; }}
+              className="px-3 py-2 text-xs rounded-lg bg-neutral-900 text-white hover:bg-neutral-800"
+            >
+              Logout
+            </button>
           </div>
 
           {/* Main grid */}
