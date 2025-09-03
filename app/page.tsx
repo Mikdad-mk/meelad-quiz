@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
 type QuizOption = {
@@ -16,237 +16,36 @@ type QuizQuestion = {
 };
 
 export default function Home() {
-  const questions: QuizQuestion[] = useMemo(
-    () => [
-      {
-        id: "q1",
-        title: "How would you like to make change happen?",
-        subtitle: "Select only one",
-        options: [
-          { id: "diy", label: "D.I.Y." },
-          { id: "contractor", label: "Contractor" },
-          { id: "manager", label: "Property Manager" },
-        ],
-      },
-      {
-        id: "q2",
-        title: "What is your project timeline?",
-        subtitle: "Select only one",
-        options: [
-          { id: "now", label: "Right away" },
-          { id: "soon", label: "1–3 months" },
-          { id: "later", label: "3+ months" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-      {
-        id: "q3",
-        title: "What is your budget range?",
-        subtitle: "Select only one",
-        options: [
-          { id: "low", label: "Under $1,000" },
-          { id: "med", label: "$1,000 – $5,000" },
-          { id: "high", label: "$5,000+" },
-        ],
-      },
-    ],
-    []
-  );
+  const [questions, setQuestions] = useState<QuizQuestion[]>([]);
+
+  useEffect(() => {
+    let isCancelled = false;
+    async function load() {
+      try {
+        const res = await fetch("/api/questions", { cache: "no-store" });
+        const data = await res.json();
+        if (isCancelled) return;
+        const normalized: QuizQuestion[] = (Array.isArray(data) ? data : []).map((q: { _id?: string; id?: string; title: string; subtitle?: string; options?: { id: string; label: string }[] }) => ({
+          id: q._id || q.id || "",
+          title: q.title,
+          subtitle: q.subtitle || "Write your answer",
+          options: Array.isArray(q.options) ? q.options : [],
+        }));
+        setQuestions(normalized);
+      } catch {
+        setQuestions([]);
+      }
+    }
+    load();
+    return () => { isCancelled = true; };
+  }, []);
 
   const [stepIndex, setStepIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [parallax, setParallax] = useState({ x: 0, y: 0 });
-  const [participant, setParticipant] = useState<{ name: string; email: string; phone: string } | null>(null);
-  const [form, setForm] = useState({ name: "", email: "", phone: "" });
+  const [participant, setParticipant] = useState<{ name: string; email: string; phone: string; place: string } | null>(null);
+  const [form, setForm] = useState({ name: "", email: "", phone: "", place: "" });
+  const [finished, setFinished] = useState(false);
 
   const current = questions[stepIndex];
   const total = questions.length;
@@ -260,13 +59,24 @@ export default function Home() {
     if (!answers[current.id]) return;
     if (isLast) {
       try {
-        await fetch("/api/participants", {
+        const res = await fetch("/api/participants", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ ...participant!, answers }),
         });
-      } catch {}
-      alert("Thanks! " + JSON.stringify(answers, null, 2));
+        
+        if (!res.ok) {
+          const errorData = await res.json();
+          if (errorData.error) {
+            alert(errorData.error);
+            return;
+          }
+        }
+        
+        setFinished(true);
+      } catch {
+        alert("Failed to submit responses. Please try again.");
+      }
       return;
     }
     setStepIndex(i => Math.min(i + 1, total - 1));
@@ -280,12 +90,13 @@ export default function Home() {
     setStepIndex(0);
     setAnswers({});
     setParticipant(null);
+    setFinished(false);
   }
 
   if (!participant) {
     return (
       <div
-        className="relative min-h-screen w-full overflow-hidden bg-[radial-gradient(1200px_700px_at_50%_100%,#ffffff_0%,#f6fff9_45%,#eafbf3_85%)] flex items-center justify-center p-4 sm:p-6"
+        className="relative min-h-screen w-full overflow-hidden bg-[radial-gradient(1200px_700px_at_50%_100%,rgba(255,255,255,0.7)_0%,#f6fff9_45%,#eafbf3_85%)] flex items-center justify-center p-4 sm:p-6"
       >
         {/* Mobile: full-bleed image centered behind card */}
         <div className="absolute inset-0 md:hidden">
@@ -363,16 +174,53 @@ export default function Home() {
                   <label className="text-xs text-neutral-600">Phone</label>
                   <input className="mt-1 w-full border border-emerald-100 rounded-xl px-3 py-2.5 bg-white/80 text-neutral-900 placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-emerald-300" placeholder="e.g. +1 555 0123" value={form.phone} onChange={e=>setForm(f=>({ ...f, phone: e.target.value }))} />
                 </div>
+                <div>
+                  <label className="text-xs text-neutral-600">Place</label>
+                  <input className="mt-1 w-full border border-emerald-100 rounded-xl px-3 py-2.5 bg-white/80 text-neutral-900 placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-emerald-300" placeholder="e.g. Damascus" value={form.place} onChange={e=>setForm(f=>({ ...f, place: e.target.value }))} />
+                </div>
               </div>
 
               <div className="mt-6 flex justify-end">
                 <button
-                  onClick={()=> setParticipant({ name: form.name.trim(), email: form.email.trim(), phone: form.phone.trim() })}
-                  disabled={!form.name || !form.email || !form.phone}
+                  onClick={()=> setParticipant({ name: form.name.trim(), email: form.email.trim(), phone: form.phone.trim(), place: form.place.trim() })}
+                  disabled={!form.name || !form.email || !form.phone || !form.place || questions.length === 0}
                   className="px-5 py-2 rounded-xl bg-gradient-to-br from-emerald-400 to-teal-400 text-neutral-900 font-medium disabled:opacity-50 shadow-md hover:shadow-lg"
                 >
-                  Start quiz
+                  {questions.length === 0 ? "No questions available" : "Start quiz"}
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (finished) {
+    return (
+      <div className="relative min-h-screen w-full overflow-hidden bg-[radial-gradient(1200px_700px_at_50%_100%,rgba(255,255,255,0.7)_0%,#f6fff9_45%,#eafbf3_85%)] flex items-center justify-center p-4 sm:p-6">
+        <div className="absolute inset-0 md:hidden">
+          <Image src="/mosque-final.png" alt="Background scene" fill priority className="object-cover object-center opacity-100 select-none pointer-events-none" />
+        </div>
+        <div className="hidden md:block absolute inset-y-0 left-0 w-full md:w-[65%] lg:w-[55%] xl:w-[50%]" style={{ WebkitMaskImage: "linear-gradient(to right, black 70%, rgba(0,0,0,0) 100%)", maskImage: "linear-gradient(to right, black 70%, rgba(0,0,0,0) 100%)" }}>
+          <Image src="/mosque-final.png" alt="Background scene" fill priority className="object-cover object-left-top opacity-100 select-none pointer-events-none" />
+        </div>
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-emerald-900/40 via-emerald-900/20 to-transparent" />
+        <div className="pointer-events-none absolute inset-0 md:hidden bg-gradient-to-b from-emerald-900/20 via-transparent to-transparent" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-emerald-600/30 via-transparent to-transparent mix-blend-multiply" />
+        <div className="pointer-events-none absolute inset-0 opacity-15 [background:radial-gradient(rgba(16,185,129,0.15)_1px,transparent_1px)] [background-size:18px_18px] mix-blend-overlay" />
+        <div className="relative w-full max-w-md md:max-w-lg lg:max-w-xl z-10 mr-0 lg:mr-12 xl:mr-20">
+          <div className="relative rounded-[28px] p-[1px] bg-gradient-to-br from-emerald-400/50 via-emerald-300/30 to-emerald-200/20 shadow-[0_24px_60px_-22px_rgba(0,0,0,0.35)]">
+            <div className="rounded-[27px] bg-white/85 backdrop-blur-xl border border-emerald-100 p-8 sm:p-10 text-center overflow-hidden">
+              <div className="absolute -top-10 -left-10 h-40 w-40 rounded-full bg-emerald-400/30 blur-2xl animate-pulse" aria-hidden />
+              <div className="absolute -bottom-10 -right-10 h-40 w-40 rounded-full bg-teal-400/30 blur-2xl animate-[pulse_7s_ease-in-out_infinite]" aria-hidden />
+              <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 mx-auto shadow animate-[bounce_1.4s_ease-in-out_1]">
+                ✓
+              </div>
+              <h1 className="mt-4 text-2xl font-semibold text-neutral-900">Congratulations!</h1>
+              <p className="mt-2 text-sm text-neutral-600">Your responses have been submitted successfully.</p>
+              <div className="mt-6 flex justify-center gap-3">
+                <button onClick={handleClose} className="px-5 py-2 rounded-xl bg-gradient-to-br from-emerald-400 to-teal-400 text-neutral-900 font-medium shadow-md hover:shadow-lg">Close</button>
               </div>
             </div>
           </div>
@@ -383,7 +231,7 @@ export default function Home() {
 
   return (
     <div
-      className="relative min-h-screen w-full overflow-hidden bg-[radial-gradient(1200px_700px_at_50%_100%,#ffffff_0%,#f6fff9_45%,#eafbf3_85%)] flex items-center justify-center lg:justify-end p-4 sm:p-6"
+      className="relative min-h-screen w-full overflow-hidden bg-[radial-gradient(1200px_700px_at_50%_100%,rgba(255,255,255,0.7)_0%,#f6fff9_45%,#eafbf3_85%)] flex items-center justify-center lg:justify-end p-4 sm:p-6"
       onMouseMove={(e) => {
         // Disable parallax on small screens for performance and touch UX
         if (typeof window !== "undefined" && window.innerWidth >= 1024) {
@@ -499,28 +347,37 @@ export default function Home() {
           )}
 
           <div className="mt-3 space-y-3">
-            {current.options.map(option => {
-              const selected = answers[current.id] === option.id;
-              return (
-                <label
-                  key={option.id}
-                  className={`flex items-center gap-3 rounded-2xl border px-3 py-3 cursor-pointer transition-all ${
-                    selected
-                      ? "bg-emerald-50 border-emerald-200 ring-2 ring-emerald-300/60"
-                      : "bg-white/70 border-emerald-100 hover:bg-white"
-                  }`}
-                >
-                  <input
-                    type="radio"
-                    name={`q-${current.id}`}
-                    className="h-4 w-4 accent-emerald-600"
-                    checked={selected}
-                    onChange={() => handleSelect(option.id)}
-                  />
-                  <span className="text-sm text-neutral-800">{option.label}</span>
-                </label>
-              );
-            })}
+            {current.options && current.options.length > 0 ? (
+              current.options.map(option => {
+                const selected = answers[current.id] === option.id;
+                return (
+                  <label
+                    key={option.id}
+                    className={`flex items-center gap-3 rounded-2xl border px-3 py-3 cursor-pointer transition-all ${
+                      selected
+                        ? "bg-emerald-50 border-emerald-200 ring-2 ring-emerald-300/60"
+                        : "bg-white/70 border-emerald-100 hover:bg-white"
+                    }`}
+                  >
+                    <input
+                      type="radio"
+                      name={`q-${current.id}`}
+                      className="h-4 w-4 accent-emerald-600"
+                      checked={selected}
+                      onChange={() => handleSelect(option.id)}
+                    />
+                    <span className="text-sm text-neutral-800">{option.label}</span>
+                  </label>
+                );
+              })
+            ) : (
+              <input
+                className="mt-1 w-full border border-emerald-100 rounded-xl px-3 py-2.5 bg-white/80 text-neutral-900 placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-emerald-300"
+                placeholder="Type your answer"
+                value={answers[current.id] || ""}
+                onChange={e => setAnswers(prev => ({ ...prev, [current.id]: e.target.value }))}
+              />
+            )}
           </div>
 
           <div className="mt-6 flex items-center justify-between">

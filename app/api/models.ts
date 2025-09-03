@@ -14,8 +14,9 @@ const QuestionSchema = new Schema(
 const ParticipantSchema = new Schema(
   {
     name: { type: String, required: true },
-    email: { type: String, required: true },
-    phone: { type: String, required: true },
+    email: { type: String, required: true, unique: true },
+    phone: { type: String, required: true, unique: true },
+    place: { type: String, required: true },
     answers: { type: Map, of: String, default: {} },
   },
   { timestamps: true }
